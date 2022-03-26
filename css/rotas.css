@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body,
+#map {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#map {
+    z-index: 0;
+}
+#titulo {
+    position: fixed;
+    margin-top: 0;
+    top: 10px;
+    left: 55px;
+    font-size: 3vw; 
+    color:floralwhite;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .04em;
+    padding: 10px 15px;
+    background-color: rgba(12, 42, 58, 0.3);
+    border: 1px solid #1E6C93;
+    border-radius: 3px;*/
+    z-index: 800;
+}
+.italic {
+	font-style: italic;
+}
+.small {
+	font-size: x-small;
+}
+@media (hover: none) {
+  .leaflet-tooltip-pane { display: none; }
+}
+.ec-theme.elevation-control.elevation .background {
+	background-color: rgba(179, 179, 255, 0.4);
+}
+.ec-theme.elevation-control.elevation .axis line,
+.ec-theme.elevation-control.elevation .axis path {
+	stroke: #0D1821;
+}
+.ec-theme.elevation-control.elevation .mouse-drag {
+	fill: rgba(179, 179, 255, 0.4);
+}
+.ec-theme.elevation-control.elevation .elevation-toggle-icon {
+	background: url(../libs/leaflet-elevation/images/elevation-purple.svg) no-repeat center center;
+}
+.ec-theme.elevation-control.elevation .area {
+    fill: rgba(12, 42, 58, 0.4);
+    stroke-width: 1;
+	stroke: rgba(204, 204, 204, 0.8);
+}
+.ec-theme.elevation-control.elevation .mouse-focus-line {
+	stroke: #0D1821;
+}
+.ec-theme.height-focus {
+	stroke: #000;
+	fill: whitesmoke;
+}
+.ec-theme.elevation-polyline {
+	stroke: rgba(166, 77, 255, 1);
+}
+.ec-theme.elevation-control.elevation .point,
+.ec-theme.elevation-control.elevation .point text {
+  display: none;
+  fill: #000;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  font-weight: 500;
+  font-size: .8em;
+}
+.dist-marker {
+  font-size: 0.5rem;
+  border: 1px solid #777;
+  border-radius: 10px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+}
+.elevation-waypoint-icon:before {
+    background: url(img/marker-icon.png) no-repeat center center / contain;
+    content: "";
+    width: 90%;
+    height: 90%;
+    display: inline-block;
+}
+.elevation-waypoint-icon.alm:before {
+    background: url(img/ico1_big.png) no-repeat center center / contain;
+    content: "";
+    width: 90%;
+    height: 90%;
+    display: inline-block;
+}
+.elevation-waypoint-icon.start:before {
+    background: url(img/pin-icon-start_2.png) no-repeat center center / contain;
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.elevation-waypoint-icon.end:before {
+    background: url(img/pin-icon-end_2.png) no-repeat center center / contain;
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.elevation-tooltip.leaflet-tooltip,
+.elevation-popup .leaflet-popup-content {
+    text-align: center;
+    font-weight: 300;
+    width: 300px !important;
+    white-space: normal;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+}
+.elevation-tooltip>b:first-child,
+.elevation-popup .leaflet-popup-content>b:first-child {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: 'averia_seriflightitalic', 'Alexander', serif;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid #bbb;
+    background: #056c9c; /*#303030;*/
+    color: white; /*#ccc;*/
+    text-shadow: -1px 0px 1px #000;
+    box-sizing: content-box;
+    margin-left: -1px;
+}
+.elevation-tooltip .wpt-link-image img,
+.elevation-popup .leaflet-popup-content .wpt-link-image img {
+    height: 100%;
+    width: 300px;
+    max-height: 230px;
+    object-fit: cover;
+    display: block;
+}
+.elevation-tooltip .wpt-link-image,
+.elevation-popup .leaflet-popup-content .wpt-link-image {
+    display: inline-block;
+}
+.elevation-tooltip .wpt-desc,
+.elevation-popup .leaflet-popup-content .wpt-desc {
+    border-top: solid 1px #ccc;
+    margin-top: 5px;
+    padding-top: 5px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+.elevation-waypoint-icon.poi::before {
+    background-image: url(libs/leaflet-elevation/images/elevation-poi.png);
+}
+/*não sei para que serve*/
+.elevation-summary.inline-summary {
+    font-size: 0.8em;
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1em;
+}
+.elevation-summary.inline-summary > span:not(:last-child)::after {
+    content: "\0020\007C\0020";
+}
+.elevation-control {
+	/*border: 1px solid rgba(173, 53, 37, 0.8) !important;*/
+    border: 1px solid rgba(153, 51, 255, 0.8) !important;
+	border-radius: 3px;
+}
+.elevation-control.elevation .grid .tick line {
+	stroke: whitesmoke;
+	stroke-width: 0.5px;
+	shape-rendering: crispEdges;
+}
+.leaflet-control-container .elevation-summary {
+	text-shadow: none !important;
+	background-color: rgba(179, 179, 255, 0.9);
+	margin: 0 !important;
+	color: black; /*white;*/
+    font-size: .8em;
+	padding: 5px;
+	text-align: center;
+}
+.line-summary>span:not(:last-child):after {
+	content: "\0020\|\0020" !important;
+}
+.line-summary .minslope,
+.line-summary .maxslope,
+.line-summary .ascent,
+.line-summary .descent {
+	display: none;
+}
+.line-summary>span.descent:after {
+	content: none !important;
+}
+.elevation-control.elevation .mouse-focus-line {
+	stroke: #0D1821;
+	stroke-width: 1;
+	pointer-events: none;
+}
+.elevation-control.elevation .mouse-focus-label-rect {
+	fill: rgba(240, 240, 240, 0.95);
+	fill-opacity: 0.75;
+	pointer-events: none;
+	stroke-width: 1;
+	stroke: #444;
+}
+.elevation-control.elevation .mouse-focus-label-text {
+	fill: #444;
+	pointer-events: none;
+	font-size: x-small;
+}
