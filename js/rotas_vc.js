@@ -26,7 +26,7 @@ L.control.scale({
     imperial: false
 }).addTo(map);
 map.attributionControl.setPrefix(
-    '&copy; <a href="https://sites.google.com/view/fmtcultura/projeto">Projecto Alminhas</a>' + ' &copy; Mapa Interactivo: <a href="mailto:ezcorreia@gmail.com">Ezequiel Correia</a> | &copy; PR1: <a href="https://www.cm-valedecambra.pt/pages/505">CM Vale de Cambra</a> | <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+    '&copy; <a href="https://sites.google.com/view/alminhas">Projecto Alminhas</a>' + ' &copy; Mapa Interactivo: <a href="mailto:ezcorreia@gmail.com">Ezequiel Correia</a> | &copy; PR1: <a href="https://www.cm-valedecambra.pt/pages/505">CM Vale de Cambra</a> | <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
 );
 var lc = L.control.locate({
     strings: {
